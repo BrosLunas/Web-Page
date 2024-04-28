@@ -21,13 +21,14 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./slide.css">
 </head>
 
 <body>
     <!-- Navbar Start -->
     <div class="container-fluid p-0 nav-bar">
         <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
-            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+            <a href="../index.html" class="navbar-brand px-lg-4 m-0">
                 <h1 class="m-0 display-4 text-uppercase text-white">Broslunas</h1>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -35,8 +36,8 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav ml-auto p-4">
-                    <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                    <a href="#error" class="nav-item nav-link">Sobre Mi</a>
+                    <a href="../index.html" class="nav-item nav-link active">Inicio</a>
+                    <a href="index.html" class="nav-item nav-link">Games</a>
                     <a href="#error" class="nav-item nav-link">Error</a>
                     <a href="#error" class="nav-item nav-link">Error</a>
                     <div class="nav-item dropdown">
@@ -75,6 +76,26 @@
         </div>
     </div>
     <!-- Carousel End -->
+
+    <!-- Slide Start -->
+    <div class="slides-container">
+        <!-- Primer slide -->
+        <div class="slide-container">
+            <a href="./demo/01-snake/index.html"><img class="slide-image" src="./img/carrousel-snake.png" alt="Snake Img"></a>
+          <div class="slide-text">
+            <a href="./demo/01-snake/index.html">Snake</a>
+          </div>
+        </div>
+      
+        <!-- Segundo slide -->
+        <div class="slide-container">
+            <a href="./demo/02-arkanoid-game/index.html"><img class="slide-image" src="./img/carrousel-arkanoid.png" alt="Arkanoid Img"></a>
+          <div class="slide-text">
+            <a href="./demo/02-arkanoid-game/index.html">Arkanoid</a>
+          </div>
+        </div>
+      </div>
+    <!-- Slide End -->
 
     <!-- Footer Start -->
     <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
