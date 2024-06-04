@@ -15,7 +15,24 @@ let arrayPalabras = [
     "ORGANISMO", "ECOSISTEMA", "BIOSFERA", "GENETICA", "HERENCIA", "ADN", "CROMOSOMA",
     "PROTEINA", "ENZIMA", "METABOLISMO", "FOTOSINTESIS", "RESPIRACION", "EVOLUCION",
     "SELECCION", "ADAPTACION", "MUTACION", "ESPECIE", "POBLACION", "COMUNIDAD",
-    "ECOSISTEMA", "BIOMA", "BIOSFERA"
+    "ECOSISTEMA", "BIOMA", "BIOSFERA", "TRIANGULO", "PENTAGONO", "HEXAGONO",
+    "RECTANGULO", "ROMBO", "CIRCULO", "OVALO", "CUBO", "ESFERA", "CILINDRO",
+    "CONO", "PIRAMIDE", "TETRAEDRO", "POLIGONO", "PARALELOGRAMO", "TRAPECIO",
+    "PATRON", "SIMETRIA", "ESCALA", "PROPORCION", "TRIANGULACION", "PUNTO",
+    "LINEA", "SUPERFICIE", "SOLIDO", "PERIMETRO", "AREA", "VOLUMEN",
+    "DENSIDAD", "MASA", "PESO", "INERCIA", "GRAVEDAD", "ENERGIA",
+    "FUERZA", "TRABAJO", "POTENCIA", "IMPULSO", "MOVIMIENTO", "VELOCIDAD",
+    "ACELERACION", "FRECUENCIA", "LONGITUD", "ALTURA", "PROFUNDIDAD",
+    "ANCHURA", "GROSOR", "RADIO", "DIAMETRO", "CIRCUNFERENCIA", "ARCO",
+    "SECTOR", "SEGMENTO", "CUERDA", "ANGULO", "VERTICE", "CENTRO",
+    "FOCO", "EJE", "PLANO", "ORIGEN", "COORDENADA", "VECTOR",
+    "MATRIZ", "ESCALAR", "FUNCION", "DERIVADA", "INTEGRAL",
+    "ECUACION", "INECUACION", "LOGARITMO", "EXPONENCIAL", "POLINOMIO",
+    "RADICAL", "SERIE", "SECUENCIA", "PROGRESION", "REGRESION",
+    "ESTADISTICA", "PROBABILIDAD", "DISTRIBUCION", "MUESTRA",
+    "VARIABLE", "CONSTANTE", "MEDIANA", "MODA", "DESVIACION",
+    "INTERVALO", "HIPOTESIS", "TENDENCIA", "CORRELACION", "CAUSALIDAD",
+    "PREDICCION", "EXPERIMENTO", "OBSERVACION", "ENSAYO", "PRUEBA"
   ];
   
   let ayudas = [
@@ -46,8 +63,35 @@ let arrayPalabras = [
     "Proceso biológico", "Material genético", "Estructura genética", 
     "Biomolécula", "Catalizador biológico", "Proceso biológico", "Proceso biológico", 
     "Cambio genético", "Proceso evolutivo", "Cambio genético", "Grupo biológico", 
-    "Grupo de organismos", "Grupo ecológico", "Grupo ecológico", "Capa de vida"
+    "Grupo de organismos", "Grupo ecológico", "Grupo ecológico", "Capa de vida",
+    "Figura geométrica", "Figura geométrica", "Figura geométrica",
+    "Figura geométrica", "Figura geométrica", "Figura geométrica", 
+    "Figura geométrica", "Sólido geométrico", "Sólido geométrico", "Sólido geométrico",
+    "Sólido geométrico", "Sólido geométrico", "Sólido geométrico", "Figura geométrica", 
+    "Figura geométrica", "Figura geométrica", "Patrón de diseño", "Equilibrio visual", 
+    "Relación de tamaño", "Comparación de tamaño", "Método de medición", "Ubicación específica", 
+    "Forma básica", "Superficie plana", "Forma tridimensional", "Longitud del contorno", 
+    "Medida de superficie", "Cantidad de espacio", "Relación masa-volumen", "Cantidad de materia", 
+    "Medida gravitacional", "Resistencia al movimiento", "Fuerza que atrae", "Capacidad de realizar trabajo", 
+    "Interacción que cambia el movimiento", "Transferencia de energía", "Trabajo por unidad de tiempo", 
+    "Cantidad de movimiento", "Desplazamiento en el tiempo", "Cambio de posición", 
+    "Cambio de velocidad", "Repetición en el tiempo", "Medida lineal", "Distancia vertical", 
+    "Medida de profundidad", "Extensión horizontal", "Dimensión transversal", "Distancia al centro", 
+    "Línea que atraviesa el centro", "Perímetro de un círculo", "Parte de la circunferencia", 
+    "Sección de un círculo", "Parte de un círculo", "Línea recta que une dos puntos", "Apertura entre dos líneas", 
+    "Punto de intersección", "Punto medio", "Punto de convergencia", "Línea alrededor de la cual gira algo", 
+    "Plano de referencia", "Punto de referencia", "Sistema de puntos", "Cantidad con dirección y magnitud", 
+    "Arreglo rectangular de números", "Número sin dirección", "Relación matemática", "Tasa de cambio instantáneo", 
+    "Área bajo una curva", "Igualdad matemática", "Desigualdad matemática", "Operador matemático", 
+    "Función de crecimiento", "Expresión algebraica", "Operador de raíz", "Suma infinita", 
+    "Sucesión de números", "Serie de términos", "Retroceso estadístico", "Análisis de datos", 
+    "Medida de incertidumbre", "Distribución de valores", "Conjunto representativo", "Factor que varía", 
+    "Cantidad fija", "Valor central", "Valor más frecuente", "Medida de dispersión", 
+    "Rango de valores", "Suposición basada en datos", "Dirección del cambio", "Relación entre variables", 
+    "Relación causa-efecto", "Estimación futura", "Prueba científica", "Recopilación de datos", 
+    "Intento experimental", "Evaluación científica"
   ];
+
 
 //variable que guarda la cantidad de palabras ya jugadas
 let cantPalabrasJugadas = 0;
@@ -93,7 +137,24 @@ function cargarNuevaPalabra(){
             "ORGANISMO", "ECOSISTEMA", "BIOSFERA", "GENETICA", "HERENCIA", "ADN", "CROMOSOMA",
             "PROTEINA", "ENZIMA", "METABOLISMO", "FOTOSINTESIS", "RESPIRACION", "EVOLUCION",
             "SELECCION", "ADAPTACION", "MUTACION", "ESPECIE", "POBLACION", "COMUNIDAD",
-            "ECOSISTEMA", "BIOMA", "BIOSFERA"
+            "ECOSISTEMA", "BIOMA", "BIOSFERA", "TRIANGULO", "PENTAGONO", "HEXAGONO",
+            "RECTANGULO", "ROMBO", "CIRCULO", "OVALO", "CUBO", "ESFERA", "CILINDRO",
+            "CONO", "PIRAMIDE", "TETRAEDRO", "POLIGONO", "PARALELOGRAMO", "TRAPECIO",
+            "PATRON", "SIMETRIA", "ESCALA", "PROPORCION", "TRIANGULACION", "PUNTO",
+            "LINEA", "SUPERFICIE", "SOLIDO", "PERIMETRO", "AREA", "VOLUMEN",
+            "DENSIDAD", "MASA", "PESO", "INERCIA", "GRAVEDAD", "ENERGIA",
+            "FUERZA", "TRABAJO", "POTENCIA", "IMPULSO", "MOVIMIENTO", "VELOCIDAD",
+            "ACELERACION", "FRECUENCIA", "LONGITUD", "ALTURA", "PROFUNDIDAD",
+            "ANCHURA", "GROSOR", "RADIO", "DIAMETRO", "CIRCUNFERENCIA", "ARCO",
+            "SECTOR", "SEGMENTO", "CUERDA", "ANGULO", "VERTICE", "CENTRO",
+            "FOCO", "EJE", "PLANO", "ORIGEN", "COORDENADA", "VECTOR",
+            "MATRIZ", "ESCALAR", "FUNCION", "DERIVADA", "INTEGRAL",
+            "ECUACION", "INECUACION", "LOGARITMO", "EXPONENCIAL", "POLINOMIO",
+            "RADICAL", "SERIE", "SECUENCIA", "PROGRESION", "REGRESION",
+            "ESTADISTICA", "PROBABILIDAD", "DISTRIBUCION", "MUESTRA",
+            "VARIABLE", "CONSTANTE", "MEDIANA", "MODA", "DESVIACION",
+            "INTERVALO", "HIPOTESIS", "TENDENCIA", "CORRELACION", "CAUSALIDAD",
+            "PREDICCION", "EXPERIMENTO", "OBSERVACION", "ENSAYO", "PRUEBA"
           ];
           
         ayudas = [
@@ -124,7 +185,33 @@ function cargarNuevaPalabra(){
             "Proceso biológico", "Material genético", "Estructura genética", 
             "Biomolécula", "Catalizador biológico", "Proceso biológico", "Proceso biológico", 
             "Cambio genético", "Proceso evolutivo", "Cambio genético", "Grupo biológico", 
-            "Grupo de organismos", "Grupo ecológico", "Grupo ecológico", "Capa de vida"
+            "Grupo de organismos", "Grupo ecológico", "Grupo ecológico", "Capa de vida",
+            "Figura geométrica", "Figura geométrica", "Figura geométrica",
+            "Figura geométrica", "Figura geométrica", "Figura geométrica", 
+            "Figura geométrica", "Sólido geométrico", "Sólido geométrico", "Sólido geométrico",
+            "Sólido geométrico", "Sólido geométrico", "Sólido geométrico", "Figura geométrica", 
+            "Figura geométrica", "Figura geométrica", "Patrón de diseño", "Equilibrio visual", 
+            "Relación de tamaño", "Comparación de tamaño", "Método de medición", "Ubicación específica", 
+            "Forma básica", "Superficie plana", "Forma tridimensional", "Longitud del contorno", 
+            "Medida de superficie", "Cantidad de espacio", "Relación masa-volumen", "Cantidad de materia", 
+            "Medida gravitacional", "Resistencia al movimiento", "Fuerza que atrae", "Capacidad de realizar trabajo", 
+            "Interacción que cambia el movimiento", "Transferencia de energía", "Trabajo por unidad de tiempo", 
+            "Cantidad de movimiento", "Desplazamiento en el tiempo", "Cambio de posición", 
+            "Cambio de velocidad", "Repetición en el tiempo", "Medida lineal", "Distancia vertical", 
+            "Medida de profundidad", "Extensión horizontal", "Dimensión transversal", "Distancia al centro", 
+            "Línea que atraviesa el centro", "Perímetro de un círculo", "Parte de la circunferencia", 
+            "Sección de un círculo", "Parte de un círculo", "Línea recta que une dos puntos", "Apertura entre dos líneas", 
+            "Punto de intersección", "Punto medio", "Punto de convergencia", "Línea alrededor de la cual gira algo", 
+            "Plano de referencia", "Punto de referencia", "Sistema de puntos", "Cantidad con dirección y magnitud", 
+            "Arreglo rectangular de números", "Número sin dirección", "Relación matemática", "Tasa de cambio instantáneo", 
+            "Área bajo una curva", "Igualdad matemática", "Desigualdad matemática", "Operador matemático", 
+            "Función de crecimiento", "Expresión algebraica", "Operador de raíz", "Suma infinita", 
+            "Sucesión de números", "Serie de términos", "Retroceso estadístico", "Análisis de datos", 
+            "Medida de incertidumbre", "Distribución de valores", "Conjunto representativo", "Factor que varía", 
+            "Cantidad fija", "Valor central", "Valor más frecuente", "Medida de dispersión", 
+            "Rango de valores", "Suposición basada en datos", "Dirección del cambio", "Relación entre variables", 
+            "Relación causa-efecto", "Estimación futura", "Prueba científica", "Recopilación de datos", 
+            "Intento experimental", "Evaluación científica"
           ];
     }
 
