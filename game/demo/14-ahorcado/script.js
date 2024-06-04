@@ -92,7 +92,6 @@ let arrayPalabras = [
     "Intento experimental", "Evaluación científica"
   ];
 
-
 //variable que guarda la cantidad de palabras ya jugadas
 let cantPalabrasJugadas = 0;
 
