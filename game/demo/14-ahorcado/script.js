@@ -1,27 +1,54 @@
 let arrayPalabras = [
     "GUITARRA", "ELEFANTE", "TURQUESA", "MARIELA", "TECLADO", "INGLATERRA",
     "COMPUTADORA", "MUSICOTRONICA", "ECUACION", "MONEDAS", "CLAVECINELLO",
-    "BIENESTAR", "TELEFONO", "LINGUISTICA", "GERENCIADOR", "INFORMATICA"
+    "BIENESTAR", "TELEFONO", "LINGUISTICA", "GERENCIADOR", "INFORMATICA",
+    "MICROSCOPIO", "SATURNO", "TELEVISOR", "ZAPATOS", "COCODRILO", "CANGREJO",
+    "RADIADOR", "LIBERTAD", "PINTURA", "QUIMICA", "SOLSTICIO", "MARMOL",
+    "AUTOBUS", "CASCADA", "VOLCAN", "TURISMO", "PALABRA", "GALAXIA", "COMETA",
+    "PERRO", "GATO", "ELEFANTE", "JIRAFA", "DICCIONARIO", "ENFERMERIA", "AVIACION",
+    "BICICLETA", "TREN", "AVION", "BARCO", "BIBLIOTECA", "ARQUITECTURA", "DIAMANTE",
+    "ORQUESTA", "FLAUTA", "TROMPETA", "BATUTA", "ASTRONOMIA", "BIOLOGIA", "FISICA",
+    "ELECTRONICA", "MATEMATICA", "ESTADISTICA", "FILOSOFIA", "PSICOLOGIA", "SOCIOLOGIA",
+    "ANTROPOLOGIA", "METEOROLOGIA", "GEOLOGIA", "OCEANO", "RIVER", "LAGO", "MAR",
+    "TIERRA", "ESPACIO", "PLANETA", "LUNA", "SOL", "ESTRELLA", "CONSTELACION", "UNIVERSO",
+    "ATOMO", "MOLECULA", "ELEMENTO", "COMPUESTO", "CELULA", "ORGANO", "SISTEMA",
+    "ORGANISMO", "ECOSISTEMA", "BIOSFERA", "GENETICA", "HERENCIA", "ADN", "CROMOSOMA",
+    "PROTEINA", "ENZIMA", "METABOLISMO", "FOTOSINTESIS", "RESPIRACION", "EVOLUCION",
+    "SELECCION", "ADAPTACION", "MUTACION", "ESPECIE", "POBLACION", "COMUNIDAD",
+    "ECOSISTEMA", "BIOMA", "BIOSFERA"
   ];
   
   let ayudas = [
-    "Instrumento Musical",
-    "Animal de la selva",
-    "Es un color",
-    "Nombre de mujer",
-    "Hardware de computadora",
-    "Es un Pais",
-    "Tejido de la computadora",
-    "Instrumento Musical electrónico",
-    "Expresión matemática",
-    "Unidad monetaria",
-    "Instrumento musical de cuerda",
-    "Concepto filosófico",
-    "Dispositivo de comunicación",
-    "Estudio del lenguaje",
-    "Persona que dirige",
-    "Campo de la tecnología"
+    "Instrumento Musical", "Animal de la selva", "Es un color", "Nombre de mujer",
+    "Hardware de computadora", "Es un Pais", "Tejido de la computadora",
+    "Instrumento Musical electrónico", "Expresión matemática", "Unidad monetaria",
+    "Instrumento musical de cuerda", "Concepto filosófico", "Dispositivo de comunicación",
+    "Estudio del lenguaje", "Persona que dirige", "Campo de la tecnología",
+    "Instrumento de laboratorio", "Planeta del sistema solar", "Dispositivo electrónico",
+    "Calzado", "Reptil", "Crustáceo", "Parte del motor", "Concepto abstracto", 
+    "Arte visual", "Ciencia natural", "Evento astronómico", "Roca metamórfica", 
+    "Medio de transporte", "Caída de agua", "Formación geológica", "Actividad recreativa",
+    "Unidad de lenguaje", "Sistema estelar", "Cuerpo celeste", "Animal doméstico",
+    "Animal doméstico", "Animal grande", "Animal alto", "Libro de referencia", 
+    "Área médica", "Campo de transporte", "Medio de transporte", "Medio de transporte", 
+    "Medio de transporte", "Medio de transporte acuático", "Edificio con libros", 
+    "Campo de diseño", "Piedra preciosa", "Grupo musical", "Instrumento de viento", 
+    "Instrumento de viento", "Herramienta musical", "Ciencia del espacio", 
+    "Ciencia de la vida", "Ciencia de la naturaleza", "Campo de la física", 
+    "Campo de la matemática", "Campo de la estadística", "Campo filosófico", 
+    "Ciencia del comportamiento", "Ciencia social", "Ciencia humana", 
+    "Ciencia del clima", "Ciencia de la tierra", "Cuerpo de agua", "Cuerpo de agua", 
+    "Cuerpo de agua", "Cuerpo de agua", "Cuerpo celeste", "Cuerpo celeste", 
+    "Cuerpo celeste", "Cuerpo celeste", "Cuerpo celeste", "Grupo de estrellas", 
+    "Todo lo existente", "Partícula pequeña", "Unidad química", "Sustancia química", 
+    "Sustancia química", "Unidad biológica", "Parte del cuerpo", "Sistema biológico", 
+    "Entidad biológica", "Grupo de organismos", "Capa de vida", "Campo biológico", 
+    "Proceso biológico", "Material genético", "Estructura genética", 
+    "Biomolécula", "Catalizador biológico", "Proceso biológico", "Proceso biológico", 
+    "Cambio genético", "Proceso evolutivo", "Cambio genético", "Grupo biológico", 
+    "Grupo de organismos", "Grupo ecológico", "Grupo ecológico", "Capa de vida"
   ];
+
 //variable que guarda la cantidad de palabras ya jugadas
 let cantPalabrasJugadas = 0;
 
@@ -52,27 +79,53 @@ function cargarNuevaPalabra(){
         arrayPalabras =[
             "GUITARRA", "ELEFANTE", "TURQUESA", "MARIELA", "TECLADO", "INGLATERRA",
             "COMPUTADORA", "MUSICOTRONICA", "ECUACION", "MONEDAS", "CLAVECINELLO",
-            "BIENESTAR", "TELEFONO", "LINGUISTICA", "GERENCIADOR", "INFORMATICA"
+            "BIENESTAR", "TELEFONO", "LINGUISTICA", "GERENCIADOR", "INFORMATICA",
+            "MICROSCOPIO", "SATURNO", "TELEVISOR", "ZAPATOS", "COCODRILO", "CANGREJO",
+            "RADIADOR", "LIBERTAD", "PINTURA", "QUIMICA", "SOLSTICIO", "MARMOL",
+            "AUTOBUS", "CASCADA", "VOLCAN", "TURISMO", "PALABRA", "GALAXIA", "COMETA",
+            "PERRO", "GATO", "ELEFANTE", "JIRAFA", "DICCIONARIO", "ENFERMERIA", "AVIACION",
+            "BICICLETA", "TREN", "AVION", "BARCO", "BIBLIOTECA", "ARQUITECTURA", "DIAMANTE",
+            "ORQUESTA", "FLAUTA", "TROMPETA", "BATUTA", "ASTRONOMIA", "BIOLOGIA", "FISICA",
+            "ELECTRONICA", "MATEMATICA", "ESTADISTICA", "FILOSOFIA", "PSICOLOGIA", "SOCIOLOGIA",
+            "ANTROPOLOGIA", "METEOROLOGIA", "GEOLOGIA", "OCEANO", "RIVER", "LAGO", "MAR",
+            "TIERRA", "ESPACIO", "PLANETA", "LUNA", "SOL", "ESTRELLA", "CONSTELACION", "UNIVERSO",
+            "ATOMO", "MOLECULA", "ELEMENTO", "COMPUESTO", "CELULA", "ORGANO", "SISTEMA",
+            "ORGANISMO", "ECOSISTEMA", "BIOSFERA", "GENETICA", "HERENCIA", "ADN", "CROMOSOMA",
+            "PROTEINA", "ENZIMA", "METABOLISMO", "FOTOSINTESIS", "RESPIRACION", "EVOLUCION",
+            "SELECCION", "ADAPTACION", "MUTACION", "ESPECIE", "POBLACION", "COMUNIDAD",
+            "ECOSISTEMA", "BIOMA", "BIOSFERA"
           ];
           
         ayudas = [
-            "Instrumento Musical",
-            "Animal de la selva",
-            "Es un color",
-            "Nombre de mujer",
-            "Hardware de computadora",
-            "Es un Pais",
-            "Tejido de la computadora",
-            "Instrumento Musical electrónico",
-            "Expresión matemática",
-            "Unidad monetaria",
-            "Instrumento musical de cuerda",
-            "Concepto filosófico",
-            "Dispositivo de comunicación",
-            "Estudio del lenguaje",
-            "Persona que dirige",
-            "Campo de la tecnología"
-          ];f
+            "Instrumento Musical", "Animal de la selva", "Es un color", "Nombre de mujer",
+            "Hardware de computadora", "Es un Pais", "Tejido de la computadora",
+            "Instrumento Musical electrónico", "Expresión matemática", "Unidad monetaria",
+            "Instrumento musical de cuerda", "Concepto filosófico", "Dispositivo de comunicación",
+            "Estudio del lenguaje", "Persona que dirige", "Campo de la tecnología",
+            "Instrumento de laboratorio", "Planeta del sistema solar", "Dispositivo electrónico",
+            "Calzado", "Reptil", "Crustáceo", "Parte del motor", "Concepto abstracto", 
+            "Arte visual", "Ciencia natural", "Evento astronómico", "Roca metamórfica", 
+            "Medio de transporte", "Caída de agua", "Formación geológica", "Actividad recreativa",
+            "Unidad de lenguaje", "Sistema estelar", "Cuerpo celeste", "Animal doméstico",
+            "Animal doméstico", "Animal grande", "Animal alto", "Libro de referencia", 
+            "Área médica", "Campo de transporte", "Medio de transporte", "Medio de transporte", 
+            "Medio de transporte", "Medio de transporte acuático", "Edificio con libros", 
+            "Campo de diseño", "Piedra preciosa", "Grupo musical", "Instrumento de viento", 
+            "Instrumento de viento", "Herramienta musical", "Ciencia del espacio", 
+            "Ciencia de la vida", "Ciencia de la naturaleza", "Campo de la física", 
+            "Campo de la matemática", "Campo de la estadística", "Campo filosófico", 
+            "Ciencia del comportamiento", "Ciencia social", "Ciencia humana", 
+            "Ciencia del clima", "Ciencia de la tierra", "Cuerpo de agua", "Cuerpo de agua", 
+            "Cuerpo de agua", "Cuerpo de agua", "Cuerpo celeste", "Cuerpo celeste", 
+            "Cuerpo celeste", "Cuerpo celeste", "Cuerpo celeste", "Grupo de estrellas", 
+            "Todo lo existente", "Partícula pequeña", "Unidad química", "Sustancia química", 
+            "Sustancia química", "Unidad biológica", "Parte del cuerpo", "Sistema biológico", 
+            "Entidad biológica", "Grupo de organismos", "Capa de vida", "Campo biológico", 
+            "Proceso biológico", "Material genético", "Estructura genética", 
+            "Biomolécula", "Catalizador biológico", "Proceso biológico", "Proceso biológico", 
+            "Cambio genético", "Proceso evolutivo", "Cambio genético", "Grupo biológico", 
+            "Grupo de organismos", "Grupo ecológico", "Grupo ecológico", "Capa de vida"
+          ];
     }
 
     //Selecciono una posicion random
