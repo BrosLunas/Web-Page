@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hundir la Flota - Colocación de Barcos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .board {
+            display: grid;
+            grid-template-columns: repeat(10, 40px);
+            grid-template-rows: repeat(10, 40px);
+            gap: 1px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+        .cell {
+            width: 40px;
+            height: 40px;
+            background-color: #c0c0c0;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+        .ship {
+            background-color: #4CAF50;
+        }
+        #start-game {
+            display: none;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="board" id="player-board">
+        <!-- This will be populated with JavaScript -->
+    </div>
+    <button id="start-game">Empezar Juego</button>
+    <script src="app.js"></script>
+</body>
+</html>

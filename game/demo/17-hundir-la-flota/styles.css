@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1, h2 {
+    color: #023e8a;
+}
+
+.turno {
+    font-size: 2em;
+    color: #d00000;
+    margin: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.board-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2px;
+    width: 300px;
+    aspect-ratio: 1;
+    background-color: #0077b6;
+    border: 2px solid #023e8a;
+}
+
+.cell {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+
+.cell::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #90e0ef;
+    transition: background-color 0.3s;
+}
+
+.cell.hit::before {
+    background-color: #d00000;
+}
+
+.cell.miss::before {
+    background-color: #03045e;
+}
+
+#restart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #023e8a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#restart-button:hover {
+    background-color: #0077b6;
+}
