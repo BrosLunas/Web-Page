@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/game/index.html"
+    "livePreview.defaultPreviewPath": "/game/index.html",
+    "git.ignoreLimitWarning": true
 }
