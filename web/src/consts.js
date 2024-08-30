@@ -121,7 +121,7 @@ export const PROJECTS = [
     ],
   },
   {
-    slug: "14-ahorcado",
+    slug: "12-ahorcado",
     title: "Ahorcado",
     hidden: false,
     learnings: [
@@ -132,7 +132,7 @@ export const PROJECTS = [
     ],
   },
   {
-    slug: "15-simon",
+    slug: "13-simon",
     title: "Simon",
     hidden: false,
     learnings: [
@@ -143,7 +143,7 @@ export const PROJECTS = [
     ],
   },
   {
-    slug: "16-3-en-raya",
+    slug: "14-3-en-raya",
     title: "3 en Raya",
     hidden: false,
     learnings: [
@@ -154,7 +154,7 @@ export const PROJECTS = [
     ],
   },
   {
-    slug: "17-hundir-la-flota",
+    slug: "15-hundir-la-flota",
     title: "Hundir la Flota",
     hidden: true,
     learnings: [
