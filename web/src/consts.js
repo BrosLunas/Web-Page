@@ -66,8 +66,8 @@ export const PROJECTS = [
     ],
   },
   {
-    slug: "07-orbita",
-    title: "Orbita",
+    slug: "07-typing",
+    title: "Typing",
     hidden: false,
     learnings: [
       "HTML",
